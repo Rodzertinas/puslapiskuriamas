@@ -1,0 +1,118 @@
+.footer-social {
+  height: 50px;
+  width: 50px;
+  border-color: initial;
+  display: block;
+  position: relative;
+
+}
+
+.bottom {
+  background: rgb(218 218 218);
+}
+
+.sadweewes svg {
+  width: 30px;
+  fill: #cb085b;
+  height: 30px;
+}
+
+.asdawtrhdtd svg {
+  width: 20px;
+}
+
+.sadweewes {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+.weafrgaerewwe {
+  min-height: 200px;
+
+}
+
+.wervasetyki {
+  bottom: 0;
+  background: #121212;
+  left: 0;
+  right: 0;
+  margin-left: 25vw;
+
+}
+
+
+
+.sdfereretreew {
+  text-align: center;
+
+
+}
+
+.sdfereretreew a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+}
+
+.ftco-animate {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.wefaewfraecdse {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: row;
+  padding-top: 30px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wefqwdwwdee {
+  color: #cb085b;
+}
+
+.copyright {
+  text-align: center;
+  color: #cb085b;
+  padding-bottom: 60px;
+  padding: 10px;
+}
+
+.footer svg {
+  width: 100px;
+}
+
+.wfqefwqdyt {
+  text-decoration: none;
+}
+
+.werwerww {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+@media(max-width:900px) {
+  .wervasetyki {
+    margin-left: 0vw;
+
+
+  }
+}
+

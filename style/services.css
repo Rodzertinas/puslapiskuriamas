@@ -1,0 +1,124 @@
+.contact-info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #cb085b;
+}
+
+.contact {
+  display: block;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+
+.paslaugos {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #cb085b, #3380bf);
+  border-image-slice: 1;
+}
+
+.paslaugos_left {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  border-top-right-radius: 300px;
+}
+
+.paslaugos_right {
+  display: flex;
+  width: 40vw;
+
+  flex-direction: column;
+}
+
+
+
+
+
+.service-category {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  margin-left: -100%;
+}
+
+.paslaugos h2 {
+  width: 45%;
+  color: #fff;
+  border-bottom: 1px solid #cb085b;
+  border-radius: 30px;
+  padding: 8px;
+  background: linear-gradient(to right, #cb085b, #3380bf);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 21px;
+  font-weight: 300;
+  font-size: 15px;
+
+
+
+  border-radius: 30px;
+  padding: 5px;
+  background: #ffffff7d;
+}
+
+
+.contactstop {
+  display: flex;
+}
+
+.main_left_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #c30758;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.call {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  color: #64daff;
+}
+
+.call_width {
+
+  height: 20px;
+}
+
+.decor {
+  height: 200px;
+  width: 90%;
+  max-width: none; /* Arba pasirinktinai galite ištrinti šią eilutę */
+  display: block;
+  padding-left: 10%;
+  margin: 0 auto;
+}
+
+.decorup {
+  border: 20px solid #fff;
+  height: 200px;
+  padding-left: 10%;
+  border-radius: 500px;
+}

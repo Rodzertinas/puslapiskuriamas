@@ -1,0 +1,161 @@
+.main {
+  font-family: Aspekta;
+}
+.aboutus_foto_div {
+  background-position: 50% 50%;
+  border: 20px solid #fff;
+  min-height: 400px;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.susisiekti {
+  color: white;
+}
+.mainHome {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main_left {
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 20px;
+  width: 65vw;
+}
+
+.main_right {
+  flex-direction: column;
+  width: 50vw;
+}
+
+.paintmages {
+  padding-top: 20px;
+  object-fit: cover;
+  width: 90%;
+  padding: 20px;
+}
+
+.aaaa {
+  background-color: #b3117a;
+  height: 12px;
+  margin: 0 auto 0 0;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  width: 124px;
+  margin-left: 20px;
+}
+
+.main_p {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.mai_title {
+  width: 100%;
+  height: 52px;
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.main_buttons {
+  align-items: center;
+  background: rgb(203 8 91 / 87%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  height: 46px;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  .service-category {
+    margin-left: -167%;
+  }
+}
+
+@media (max-width: 460px) {
+  .main_right {
+    width: 100vw;
+  }
+  .paslaugos h2 {
+    min-width: 60%;
+  }
+
+  .mai_title {
+    height: 83px;
+  }
+
+  .main_buttons {
+    width: 100%;
+  }
+
+  .mainHome {
+    min-height: 90vh;
+  }
+}
+@media (max-width: 1100px) {
+  .main_left {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 920px) {
+  .top-bar {
+    background: var(--phone--menu--background);
+    position: fixed;
+  }
+  strong a {
+    color: var(--logo--first--clor);
+  }
+}
+
+@media (max-width: 1000px) {
+  .main_left {
+    padding-left: 10px;
+  }
+
+  .paintmages {
+    display: none;
+  }
+  .mainHome {
+    flex-direction: column;
+  }
+
+  .main_left {
+    width: 100%;
+  }
+
+  .main_left_top {
+    margin-top: 0px;
+  }
+
+  .main_right {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mainaboutus {
+    flex-direction: column;
+  }
+}
