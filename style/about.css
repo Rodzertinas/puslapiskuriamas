@@ -14,13 +14,18 @@
  
     width: 50%;
   }
+
+#service, #reviews, #contact, #home, #about, #chooseus{
+  padding-top: 1px;
+}
 .Title{
+  margin-top: 50px;
   font-size: 2.25rem;
   align-items: center;
   display: flex;
   padding-left: 40px;
   margin-bottom: 60px;
-  margin-top: 60px;
+
 }
 .aboutp{
   font-size: 21px;

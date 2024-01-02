@@ -148,10 +148,22 @@ strong a {
   cursor: pointer;
   background-color: #f5f5f5;
 }
-.nav-link.active .nav__item {
- 
-  background-color: #cb085b;
-  background-color: var(--nav--hover--color);
+.nav__item.active {
+  transition: background-color 0.3s ease; /* Pridėkite pereinamą efektą pagal poreikį */
+
+}
+
+
+.nav__item {
+  /* Jūsų stiliai */
+  background-color: transparent; /* Nustatome pradine fono spalvą (permatomą) */
+  transition: background-color 0.2s, color 0.2s; /* Perėjimo efektas */
+}
+
+/* Aktyvaus meniu elemento stiliai */
+.nav__item.active {
+  color: #cb085b; /* Aktyvaus elemento fono spalva */
+
 }
 .mainscreen {
   position: absolute;
