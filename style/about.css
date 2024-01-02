@@ -41,7 +41,7 @@
 
 
  
-@media(max-width:900px) {
+@media(max-width:700px) {
 .mainaboutus {
 flex-direction: column-reverse;
 }
