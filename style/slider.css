@@ -1,121 +1,124 @@
 @keyframes slide {
     0% {
-        left: 0%;
+      left: 0%;
     }
-
     5% {
-        left: -100%;
+      left: -100%;
     }
-
     20% {
-        left: -100%;
+      left: -100%;
     }
-
     25% {
-        left: -200%;
+      left: -200%;
     }
-
     40% {
-        left: -200%;
+      left: -200%;
     }
-
     45% {
-        left: -300%;
+      left: -300%;
     }
-
     60% {
-        left: -300%;
+      left: -300%;
     }
-
     65% {
-        left: -400%;
+      left: -400%;
     }
-
     80% {
-        left: -400%;
+      left: -400%;
     }
-
     85% {
-        left: -500%;
+      left: -500%;
     }
-
     100% {
-        left: -500%;
+      left: -500%;
     }
-}
-
-* {
+  }
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: arial, sans-serif;
-}
-
-main {
-
+  }
+  .galerie_Main {
+    
     --bullet-size: 16px;
     --bullet-padding: 2px;
     --bullet-margin: 26px;
-
+    
     overflow: hidden;
-
-}
-
-.container {
+  
+  }
+  .container_slider {
     position: relative;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     width: 100%;
     display: flex;
-    height: auto;
+    /* height: 100vh; */
     transition: all 1s ease;
-}
 
-.slide {
-    flex-grow: 1;
+    /* background-position: 50% 50%;
+    border: 20px solid #fff;
+    min-height: 400px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; */
+  }
+  .slide {
+    position: relative;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    display: flex;
+    /* height: 100vh; */
+    transition: all 1s ease;
+
+    /* flex-grow: 1;
     position: relative;
     height: 100%;
     background-size: cover !important;
-    background-position: center !important;
-}
+    background-position: center !important; */
+  }
+  .slide-1 {
+  
+    object-fit: cover;
+    width: 100%;
+   
+  }
+  .slide-2 {
 
-.slide-1 {
-    background: red;
-}
+  }
+  .slide-3 {
+ 
+  }
+  .slide-4 {
 
-.slide-2 {
-    background: blue;
-}
-
-.slide-3 {
-    background: pink;
-}
-
-.slide-4 {
-    background: turquoise;
-}
-
-.slide-5 {
-    background: purple;
-}
-
-input[type="autoplay"],
-input[type="controls"] {
+  }
+  .slide-5 {
+ 
+  }
+  input[type="autoplay"],
+  input[type="controls"] {
     opacity: 0;
-}
-
-input[type="radio"] {
+  }
+  input[type="radio"] {
     position: absolute;
     z-index: 1;
     bottom: 10px;
     appearance: none;
     -webkit-appearance: none;
-}
-
-input[value="autoplay"],
-label[for="autoplay"],
-input[value="controls"],
-label[for="controls"] {
+  }
+  input[value="autoplay"],
+  label[for="autoplay"],
+  input[value="controls"],
+  label[for="controls"]{
     position: absolute;
     top: 10px;
     width: 80px;
@@ -124,41 +127,49 @@ label[for="controls"] {
     padding: 3px 10px;
     font-size: 12px;
     text-align: center;
-}
-
-input[value="autoplay"],
-label[for="autoplay"] {
-    right: 100px;
-}
-
-input[value="controls"],
-label[for="controls"] {
+  }
+  input[value="autoplay"],
+  label[for="autoplay"]{
+    right: 5px;
+    top: 5px;
+    font-family: math;
+    border-radius: 3px;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.17);
+  }
+  .autoplaysvg{
+    width: 19px;
+  }
+  .autoplay{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  input[value="controls"],
+  label[for="controls"]{
     right: 10px;
-}
-
-label {
+  }
+  /* label {
     background-color: rgba(255, 255, 255, 0.2);
-}
-
-input[type="radio"]:checked+label {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-input[value="autoplay"]:checked~main input {
+  } */
+  input[type="radio"]:checked + label {
+    background-color: rgb(0 0 0 / 53%);
+  }
+  input[value="autoplay"]:checked ~ .galerie_Main input {
     display: none;
-}
-
-input[value*="option"] {
+  }
+  input[value*="option"] {
     width: var(--bullet-size);
     height: var(--bullet-size);
     padding-top: var(--bullet-padding);
     display: block;
     text-align: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-color: rgba(255, 255, 255, 0.3);
-}
-
-.slide-indicator {
+  }
+  .slide-indicator {
     pointer-events: none;
     touch-action: none;
     width: var(--bullet-size);
@@ -167,112 +178,90 @@ input[value*="option"] {
     position: absolute;
     z-index: 3;
     bottom: 10px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transform: translateX(-50%);
-    left: 50%;
+    /* left: 50%; */
     transition: all 1s ease;
-}
-
-.slide-indicator::after {
+  }
+  .slide-indicator::after {
     position: absolute;
     content: '';
     background-color: white;
-    left: 20%;
+    /* left: 20%; */
     top: 20%;
     height: 60%;
-    width: 60%;
-    border-radius: 50%;
-}
-
-input[value*="indicators"]:checked~main .slide-indicator {
+    width: 100%;
+    /* border-radius: 50%; */
+  }
+  input[value*="indicators"]:checked ~ .galerie_Main .slide-indicator {
     display: block;
-}
-
-input[value="option-1"]:checked~.slide-indicator {
+  }
+  input[value="option-1"]:checked ~ .slide-indicator {
     left: calc(50% - var(--bullet-margin) * 2);
-}
-
-input[value="option-2"]:checked~.slide-indicator {
+  }
+  input[value="option-2"]:checked ~ .slide-indicator {
     left: calc(50% - var(--bullet-margin));
-}
-
-input[value="option-4"]:checked~.slide-indicator {
+  }
+  input[value="option-4"]:checked ~ .slide-indicator {
     left: calc(50% + var(--bullet-margin));
-}
-
-input[value="option-5"]:checked~.slide-indicator {
+  }
+  input[value="option-5"]:checked ~ .slide-indicator {
     left: calc(50% + var(--bullet-margin) * 2);
-}
-
-input[value*="option"] {
-    transform: translateX(-50%);
-}
-
-input[value="option-1"] {
+  }
+  input[value*="option"] {
+      transform: translateX(-50%);
+  }
+  input[value="option-1"] {
     left: calc(50% - var(--bullet-margin) * 2);
-}
-
-input[value="option-2"] {
+  }
+  input[value="option-2"] {
     left: calc(50% - var(--bullet-margin));
-}
-
-input[value="option-3"] {
-    left: 50%;
-}
-
-input[value="option-4"] {
+  }
+  input[value="option-3"] {
+    /* left: 50%; */
+  }
+  input[value="option-4"] {
     left: calc(50% + var(--bullet-margin));
-}
-
-input[value="option-5"] {
+  }
+  input[value="option-5"] {
     left: calc(50% + var(--bullet-margin) * 2);
-}
-
-input[value*="controls"]:checked~main .container {
+  }
+  input[value*="controls"]:checked ~ .galerie_Main .container_slider {
     animation-name: none;
-}
-
-input[value*="autoplay"]:checked~main .container {
+  }
+  input[value*="autoplay"]:checked ~ .galerie_Main .container_slider {
     animation-name: slide;
-}
-
-input[value="option-1"]:checked~.container {
+  }
+  input[value="option-1"]:checked ~ .container_slider {
     left: 0%;
-}
-
-input[value="option-2"]:checked~.container {
+  }
+  input[value="option-2"]:checked ~ .container_slider {
     left: -100%;
-}
-
-input[value="option-3"]:checked~.container {
+  }
+  input[value="option-3"]:checked ~ .container_slider {
     left: -200%;
-}
-
-input[value="option-4"]:checked~.container {
+  }
+  input[value="option-4"]:checked ~ .container_slider {
     left: -300%;
-}
-
-input[value="option-5"]:checked~.container {
+  }
+  input[value="option-5"]:checked ~ .container_slider {
     left: -400%;
-}
-
-ol {
+  }
+  ol {
     list-style: none;
-}
-
-ol li {
+  }
+  ol li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-ol li * {
+  }
+  ol li * {
     text-align: center;
     color: white;
-}
-
-/* option Controls */
-input[value="controls"]:checked~main input[type="radio"] {
+  }
+  
+  /* option Controls */
+  input[value="controls"]:checked ~ .galerie_Main input[type="radio"] {
     position: absolute;
     z-index: 1;
     appearance: none;
@@ -289,21 +278,4 @@ input[value="controls"]:checked~main input[type="radio"] {
     background-color: #d8d8d8;
     transition: all 500ms ease;
     border-radius: 5px;
-}
-
-input[value="controls"]:checked~main input[value*="option"]:checked~input[value*="option"],
-input[value="controls"]:checked~main input[value*="option"]:checked {
-    display: none;
-}
-
-input[value="controls"]:checked~main input[value*="option"]:checked+input[value*="option"] {
-    right: 10px;
-    left: auto;
-    display: block;
-    transform: rotate(180deg);
-}
-
-input[value="controls"]:checked~main input[value*="option"]:hover {
-    background-color: white;
-    transition: all 500ms ease;
-}
+  }

@@ -64,17 +64,29 @@ ul {
   /* list-style-type: none; */
   /* padding: 0; */
 }
-
+.paslaugos_left{
+  background-position: 50% 50%;
+  border: 3px solid #ffffff;
+  min-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 li {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  font-size: 21px;
-  box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.1);
-  font-weight: 300;
-  font-size: 15px;
-  border-radius: 30px;
-  padding: 5px;
-  background: #ffffff7d;
+     /* margin-bottom: 5px; */
+    /* margin-top: 5px; */
+    /* font-size: 21px; */
+    box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.1);
+    /* font-weight: 300; */
+    /* font-size: 15px; */
+    /* border-radius: 30px; */
+    /* padding: 5px; */
+    /* background: #ffffff7d; */
 }
 
 

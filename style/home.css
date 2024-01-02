@@ -1,20 +1,20 @@
-.main {
+.mainscreen {
   font-family: Aspekta;
 }
 .aboutus_foto_div {
-  background-position: 50% 50%;
-  border: 20px solid #fff;
-  min-height: 400px;
-  position: relative;
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+    /* background-position: 50% 50%; */
+    /* border: 20px solid #fff; */
+    /* min-height: 400px; */
+    position: relative;
+    width: 100%;
+    /* object-fit: cover; */
+    /* background-size: cover; */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* color: white; */
 }
 .susisiekti {
   color: white;

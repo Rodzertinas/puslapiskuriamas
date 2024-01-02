@@ -112,7 +112,7 @@ strong a {
   align-items: center;
 }
 .nav__item:hover {
-  border-bottom: 1px solid #cb085b;
+  /* border-bottom: 1px solid #cb085b; */
 }
 
 .nav__item.overview {
@@ -122,7 +122,7 @@ strong a {
   margin-bottom: 12px;
 }
 .nav__item:hover {
-  background-color: var(--nav--hover--color);
+  /* background-color: var(--nav--hover--color); */
   cursor: pointer;
 }
 .nav__item i {
@@ -147,6 +147,11 @@ strong a {
 .nav-footer:hover {
   cursor: pointer;
   background-color: #f5f5f5;
+}
+.nav-link.active .nav__item {
+ 
+  background-color: #cb085b;
+  background-color: var(--nav--hover--color);
 }
 .mainscreen {
   position: absolute;

@@ -48,6 +48,7 @@
   <link rel="stylesheet" href="./style/whu_choose_us.css">
   <link rel="stylesheet" href="./style/services.css">
   <link rel="stylesheet" href="./style/reviews.css">
+  <link rel="stylesheet" href="./style/slider.css">
   <link rel="stylesheet" href="./style/footer.css">
   <title>Painting</title>
 </head>
@@ -75,60 +76,51 @@
 
     <div class="navas">
       <div>
+          <label class="nav__label">Kategorijos</label>
+          <a href="#about" class="nav-link">
+              <div class="nav__item">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  <img class="svgmenu" src="./svg/info.svg" alt="#">
+                  Apie mus
+              </div>
+          </a>
 
-        <label class="nav__label">Kategorijos</label>
-        <a href="#about">
-          <div class="nav__item">
-            <i class="fa fa-line-chart" aria-hidden="true"></i>
-            <img class="svgmenu" src="./svg/info.svg" alt="#">
-            Apie mus
-          </div>
-        </a>
+          <a href="#chooseus" class="nav-link">
+              <div class="nav__item">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                  <img class="svgmenu" src="./svg/why.svg" alt="#">
+                  Kodėl Pasirinkti mus
+              </div>
+          </a>
 
-        <a href="#chooseus">
-          <div class="nav__item">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <img class="svgmenu" src="./svg/why.svg" alt="#">
-            Kodėl Pasirinkti mus
-          </div>
-        </a>
+          <a href="#service" class="nav-link">
+              <div class="nav__item">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                  <img class="svgmenu" src="./svg/services.svg" alt="#">
+                  Paslaugos
+              </div>
+          </a>
 
-        <a href="#service">
-          <div class="nav__item">
-            <i class="fa fa-database" aria-hidden="true"></i>
-            <img class="svgmenu" src="./svg/services.svg" alt="#">
-            Paslaugos
-          </div>
-        </a>
-
-        <a href="#reviews">
-          <div class="nav__item">
-            <i class="fa fa-database" aria-hidden="true"></i>
-            <img class="svgmenu" src="./svg/comment.svg" alt="#">
-        Kometarai
-          </div>
-        </a>
-
+          <a href="#reviews" class="nav-link">
+              <div class="nav__item">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                  <img class="svgmenu" src="./svg/comment.svg" alt="#">
+                  Komentarai
+              </div>
+          </a>
       </div>
-
-
-
-    
-   
-
-
 
       <div class="contacsdds">
-        <label class="nav__label">Daugiau</label>
-        <a href="#contact">
-          <div class="nav__item">
-            <i class="fa fa-map-signs" aria-hidden="true"></i>
-            <img class="svgmenu" src="./svg/contact.svg" alt="#">
-            Kontaktai
-          </div>
-        </a>
+          <label class="nav__label">Daugiau</label>
+          <a href="#contact" class="nav-link">
+              <div class="nav__item">
+                  <i class="fa fa-map-signs" aria-hidden="true"></i>
+                  <img class="svgmenu" src="./svg/contact.svg" alt="#">
+                  Kontaktai
+              </div>
+          </a>
       </div>
-    </div>
+  </div>
 
     </div>
   </nav>
@@ -186,6 +178,47 @@
         </div>
         <div class="mainabout_right">
           <div class="aboutus_foto_div">
+         <!-- .......... -->
+         <input type="radio" id="controls" name="type" value="controls">
+         <!-- <label for="controls">Controls</label><input type="radio" name="type" value="indicators"> -->
+         <!-- <label for="indicators">Indicators</label> -->
+         <input type="radio" id="autoplay" name="type" value="autoplay" checked>
+         <div class="autoplay_div">
+          
+          <label class="autoplay" for="autoplay"><img class="autoplaysvg" src="./svg/play.svg" alt="">Autoplay</label>
+         </div>
+       
+     
+         <div class="galerie_Main">
+             <input type="radio" id="option-1" name="slider" value="option-1" checked>
+       <input type="radio" id="option-2" name="slider" value="option-2">
+       <input type="radio" id="option-3" name="slider" value="option-3">
+       <input type="radio" id="option-4" name="slider" value="option-4">
+       <input type="radio" id="option-5" name="slider" value="option-5">
+     
+             <ol class="container_slider">
+              <li class="slide slide-1">
+                <img src="./images/facepaint.jpg" alt="">
+               </li>
+                 <li class="slide slide-2">
+                   <img src="./images/facepaint.jpg" alt="">
+                 </li>
+                 <li class="slide slide-3">
+                  <img src="./images/facepaint.jpg" alt="">
+                 </li>
+                 <li class="slide slide-4">
+                  <img src="./images/facepaint.jpg" alt="">
+                 </li>
+                 <li class="slide slide-5">
+                  <img src="./images/facepaint.jpg" alt="">
+                 </li>
+                 <li class="slide slide-1">
+                  <img src="./images/facepaint.jpg" alt="">
+                 </li>
+             </ol>
+             <span class="slide-indicator"></span>
+         </div>
+         <!-- ........... -->
           </div>
         </div>
       </section>
@@ -284,7 +317,7 @@
 <div id="reviews">
 
 </div>
-<h1 class="Title">Ką klientai sako:</h1>
+<h1 class="Title">Klientai sako:</h1>
 <section id="testimonials">
   <div class="testimonial-heading">
       <span>Komentarai</span>
@@ -483,6 +516,15 @@
   $('.nav__item').on('click', function() {
     $('.nav, .mobile-mask').removeClass('show');
   });
+
+
+  $(document).ready(function() {
+    $('.nav-link').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
 </script>
 
 

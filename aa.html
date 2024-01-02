@@ -47,7 +47,7 @@
   margin: 0;
   font-family: arial, sans-serif;
 }
-main {
+.galerie_Main {
   
   --bullet-size: 16px;
   --bullet-padding: 2px;
@@ -126,7 +126,7 @@ label {
 input[type="radio"]:checked + label {
   background-color: rgba(255, 255, 255, 1);
 }
-input[value="autoplay"]:checked ~ main input {
+input[value="autoplay"]:checked ~ .galerie_Main input {
   display: none;
 }
 input[value*="option"] {
@@ -162,7 +162,7 @@ input[value*="option"] {
   width: 60%;
   border-radius: 50%;
 }
-input[value*="indicators"]:checked ~ main .slide-indicator {
+input[value*="indicators"]:checked ~ .galerie_Main .slide-indicator {
   display: block;
 }
 input[value="option-1"]:checked ~ .slide-indicator {
@@ -195,10 +195,10 @@ input[value="option-4"] {
 input[value="option-5"] {
   left: calc(50% + var(--bullet-margin) * 2);
 }
-input[value*="controls"]:checked ~ main .container {
+input[value*="controls"]:checked ~ .galerie_Main .container {
   animation-name: none;
 }
-input[value*="autoplay"]:checked ~ main .container {
+input[value*="autoplay"]:checked ~ .galerie_Main .container {
   animation-name: slide;
 }
 input[value="option-1"]:checked ~ .container {
@@ -230,7 +230,7 @@ ol li * {
 }
 
 /* option Controls */
-input[value="controls"]:checked ~ main input[type="radio"] {
+input[value="controls"]:checked ~ .galerie_Main input[type="radio"] {
   position: absolute;
   z-index: 1;
   appearance: none;
@@ -248,17 +248,17 @@ input[value="controls"]:checked ~ main input[type="radio"] {
   transition: all 500ms ease;
   border-radius: 5px;
 }
-input[value="controls"]:checked ~ main input[value*="option"]:checked ~ input[value*="option"],
-input[value="controls"]:checked ~ main input[value*="option"]:checked {
+input[value="controls"]:checked ~ .galerie_Main input[value*="option"]:checked ~ input[value*="option"],
+input[value="controls"]:checked ~ .galerie_Main input[value*="option"]:checked {
   display: none;
 }
-input[value="controls"]:checked ~ main input[value*="option"]:checked + input[value*="option"] {
+input[value="controls"]:checked ~ .galerie_Main input[value*="option"]:checked + input[value*="option"] {
   right: 10px;
   left: auto;
   display: block;
   transform: rotate(180deg);
 }
-input[value="controls"]:checked ~ main input[value*="option"]:hover {
+input[value="controls"]:checked ~ .galerie_Main input[value*="option"]:hover {
   background-color: white;
   transition: all 500ms ease;
 }
@@ -272,7 +272,7 @@ input[value="controls"]:checked ~ main input[value*="option"]:hover {
     <input type="radio" id="autoplay" name="type" value="autoplay" checked>
     <label for="autoplay">Autoplay</label>
 
-    <main>
+    <div class="galerie_Main">
         <input type="radio" id="option-1" name="slider" value="option-1" checked>
   <input type="radio" id="option-2" name="slider" value="option-2">
   <input type="radio" id="option-3" name="slider" value="option-3">
@@ -300,7 +300,7 @@ input[value="controls"]:checked ~ main input[value*="option"]:hover {
             </li>
         </ol>
         <span class="slide-indicator"></span>
-    </main>
+    </div>
 </body>
 
 </html>
