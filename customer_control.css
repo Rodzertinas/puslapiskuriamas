@@ -7,30 +7,13 @@
   
     --phone--menu--background: #cb085b;
 }
-
-
-
 .mainHome {
 	background-image: url("../images/bacgroundss.jpg");
-  }
-  .paslaugos_left{
-    background-image: url(./images/decorup.jpg);
-    background-position: 50% 50%;
-    border: 3px solid #ffffff;
-    min-height: 400px;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    color: white;
   }
   .Title {
     color: #cb085b;
 }
 .aboutus_foto_div{
-  background-image: url("./images/facepaint.jpg");
+  /* background-image: url("./images/facepaint.jpg"); */
 
 }
