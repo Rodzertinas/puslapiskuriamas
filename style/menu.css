@@ -8,8 +8,8 @@ body {
   width: 100%;
 }
 .svgmenu{
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
 }
 .nav_fixed {
   position: fixed;
@@ -103,9 +103,11 @@ strong a {
   padding: 15px 24px;
 }
 .nav__item {
+  letter-spacing: 2px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 11px;
   gap: 10px;
+  font-family: math;
   padding: 11px 0px;
   display: flex;
   margin-left: -15px;
@@ -155,16 +157,47 @@ strong a {
 
 
 .nav__item {
+  font-weight: 900;
   background-color: transparent; 
   transition: background-color 0.2s, color 0.2s; 
+  
 }
 
 
 .nav__item.active {
   color: #cb085b;
-  background-color: #143a4d;
+  background-color: #ffffff;
+ 
 
 }
+
+
+
+.nav__item.active .svgmenu path {
+  fill: #cb085b; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mainscreen {
   position: absolute;
