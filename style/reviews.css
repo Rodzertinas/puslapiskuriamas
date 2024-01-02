@@ -107,3 +107,26 @@ transition: all ease 0.3s;
     font-size: 0.9rem;
     color: #4b4b4b;
 }
+@media(max-wdth:1060px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width: 100%;
+      
+    }
+}
+@media(max-width:790px){
+    .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #cb085b;
+}
