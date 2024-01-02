@@ -118,12 +118,11 @@ li {
 }
 
 .decor {
-  height: 30%;
-  width: 90%;
+  height: 23%;
+  width: 78%;
   max-width: none;
   display: block;
-  padding-left: 10%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .decorup {
