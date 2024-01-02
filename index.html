@@ -531,28 +531,43 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
   $(document).ready(function () {
-      $(window).on('scroll', function () {
-          var scrollPosition = $(this).scrollTop();
+    $(window).on('scroll', function () {
+        var scrollPosition = $(this).scrollTop();
 
-          // Tikriname, ar esame viršuje puslapio ir esame už #home sekcijos
-          var isAtTop = scrollPosition === 0;
-          var isAboveHomeSection = scrollPosition < $('#home').offset().top;
-          if (isAtTop || isAboveHomeSection) {
-              $('.nav__item.active').css('color', '#ffffff');
-          } else {
-              $('.nav__item.active').css('color', ''); // Atstatome numatytąją spalvą
-          }
-          $('div[id]').each(function () {
-              var target = $(this).offset().top;
-              var targetId = $(this).attr('id');
+        var isAtTop = scrollPosition === 0;
+        var isAboveHomeSection = scrollPosition < $('#home').offset().top;
+        
+        // Sukurkite jQuery objektą tikslui, kuriam keisite stilius
+        var activeNavItem = $('.nav__item.active');
 
-              if (scrollPosition >= target - 100 && scrollPosition < target + $(this).outerHeight() - 100) {
-                  $('.nav__item').removeClass('active');
-                  $('.nav-link[href="#' + targetId + '"] .nav__item').addClass('active');
-              }
-          });
-      });
-  });
+        if (isAtTop || isAboveHomeSection) {
+            activeNavItem.css({
+                'color': '#ffffff',
+                'background-color': '#0d2d3d'
+            });
+        } else {
+            // Atstatome numatytąją spalvą, šriftą ir foną
+            activeNavItem.css({
+                'color': '',
+                'background-color': ''
+            });
+        }
+
+        $('div[id]').each(function () {
+            var target = $(this).offset().top;
+            var targetId = $(this).attr('id');
+
+            if (scrollPosition >= target - 100 && scrollPosition < target + $(this).outerHeight() - 100) {
+                // Išimame "active" klasę iš visų .nav__item elementų
+                $('.nav__item').removeClass('active');
+                
+                // Pridedame "active" klasę tik tam .nav__item, kuris yra susijęs su esamu div su id
+                $('.nav-link[href="#' + targetId + '"] .nav__item').addClass('active');
+            }
+        });
+    });
+});
+
 </script>
 
 

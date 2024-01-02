@@ -155,16 +155,17 @@ strong a {
 
 
 .nav__item {
-  /* Jūsų stiliai */
-  background-color: transparent; /* Nustatome pradine fono spalvą (permatomą) */
-  transition: background-color 0.2s, color 0.2s; /* Perėjimo efektas */
+  background-color: transparent; 
+  transition: background-color 0.2s, color 0.2s; 
 }
 
-/* Aktyvaus meniu elemento stiliai */
+
 .nav__item.active {
-  color: #cb085b; /* Aktyvaus elemento fono spalva */
+  color: #cb085b;
+  background-color: #143a4d;
 
 }
+
 .mainscreen {
   position: absolute;
   left: 248px;
