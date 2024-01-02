@@ -106,9 +106,9 @@ li {
 }
 
 .decor {
-  height: 200px;
+  height: auto;
   width: 90%;
-  max-width: none; /* Arba pasirinktinai galite ištrinti šią eilutę */
+  max-width: none;
   display: block;
   padding-left: 10%;
   margin: 0 auto;
