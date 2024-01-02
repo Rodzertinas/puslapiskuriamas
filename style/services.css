@@ -69,11 +69,9 @@ li {
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 21px;
+  box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.1);
   font-weight: 300;
   font-size: 15px;
-
-
-
   border-radius: 30px;
   padding: 5px;
   background: #ffffff7d;

@@ -43,12 +43,14 @@ a {
 }
 
 .testimonial-box {
+    border: 1px solid rgb(203, 8, 91);
     width: 450px;
     box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.1);
     background-color: #ffffff;
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    min-height: 180px;
 }
 .testimonial-box:hover {
 transform: translateY(-10px);
