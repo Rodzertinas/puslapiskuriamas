@@ -163,13 +163,13 @@
 
             poreikiams. Mes patyrusi komanda garantuojame puikias paslaugas. Susisiekite šiandien, ir visa kita
             pasirūpinsime mes!</p>
-          <!-- <a href="#contact">
+          <a href="#contact">
             <div class="main_buttons">
 
               <span class="susisiekti"> Susisiekti</span>
 
             </div>
-          </a> -->
+          </a>
         </div>
 
       </div>
@@ -198,7 +198,7 @@
         </div>
         <div class="mainabout_right">
           <div class="aboutus_foto_div">
-            <input type="radio" id="controls" name="type" value="controls">
+            <!-- <input type="radio" id="controls" name="type" value="controls"> -->
             <input type="radio" id="autoplay" name="type" value="autoplay" checked>
             <div class="autoplay_div">
               <label class="autoplay" for="autoplay"><img class="autoplaysvg" src="./svg/play.svg"
@@ -211,7 +211,7 @@
               <input type="radio" id="option-4" name="slider" value="option-4">
               <input type="radio" id="option-5" name="slider" value="option-5">
 
-              <!-- <ol class="container_slider">
+              <ol class="container_slider">
                 <li class="slide slide-1">
                   <img src="./images/facepaint.jpg" alt="">
                 </li>
@@ -230,7 +230,7 @@
                 <li class="slide slide-1">
                   <img src="./images/facepaint.jpg" alt="">
                 </li>
-              </ol> -->
+              </ol>
               <span class="slide-indicator"></span>
             </div>
             <!-- ........... -->
@@ -529,14 +529,12 @@
           'color': '#ffffff',
           'background-color': '#0d2d3d'
         });
-        // Nustatome SVG spalvą
         activeNavItem.find('.svgmenu path').css('fill', '#ffffff');
       } else {
         activeNavItem.css({
           'color': '',
           'background-color': ''
         });
-        // Atstatome numatytąją SVG spalvą
         activeNavItem.find('.svgmenu path').css('fill', '');
       }
       $('div[id]').each(function() {
